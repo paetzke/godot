@@ -131,7 +131,7 @@ func NewDotterEx(oType OutputType, prog Program, gType GraphType,
 		if err != nil {
 			return nil, err
 		}
-		go io.Copy(os.Stdin, stdout)
+		go io.Copy(os.Stdout, stdout)
 	}
 
 	stdin, err := cmd.StdinPipe()
