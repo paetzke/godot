@@ -1,27 +1,5 @@
 // Copyright 2013, Friedrich Paetzke. All rights reserved.
 
-// This package  provides wrapper functions for dot.
-//
-// Example:
-/*
-	dotter, err := godot.NewDotter(godot.OUT_PDF, godot.GRAPH_DIRECTED, "test.pdf")
-	defer dotter.Close()
-	if err != nil {
-		panic(err)
-	}
-
-	dotter.SetLink("val", "val")
-	dotter.SetLabel("val", "LABEL!!")
-
-	dotter.SetLink("val", "val1")
-	dotter.SetLink("val", "val1")
-	dotter.SetLink("val", "val1")
-
-	dotter.SetLabel("val3", "sLABEL!!")
-
-	dotter.SetNodeShape("val3", godot.SHAPE_BOX)
-	dotter.SetNodeShape("val34", godot.SHAPE_BOX)
-*/
 package godot
 
 import (
