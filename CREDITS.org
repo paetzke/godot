@@ -1,0 +1,5 @@
+* CREDITS
+
+Thanks to:
+
+- kisielk (https://github.com/kisielk) for fixing a bug
