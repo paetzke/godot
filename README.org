@@ -1,0 +1,37 @@
+* godot
+
+Copyright (c) 2013, Friedrich Paetzke (f.paetzke@gmail.com)
+All rights reserved.
+
+Godot is a graphviz wrapper for Go.
+
+An example:
+
+#+BEGIN_SRC go
+package main
+
+import "github.com/paetzke/godot/godot"
+
+func main() {
+        dotter, err := godot.NewDotter(godot.OUT_PDF, godot.GRAPH_DIRECTED, "test.pdf")
+        defer dotter.Close()
+        if err != nil {
+                panic(err)
+        }
+
+        dotter.SetLink("val", "val")
+        dotter.SetLabel("val", "LABEL!!")
+
+        dotter.SetLink("val", "val1")
+        dotter.SetLink("val", "val1")
+        dotter.SetLink("val", "val1")
+
+        dotter.SetLabel("val3", "sLABEL!!")
+
+        dotter.SetNodeShape("val3", godot.SHAPE_BOX)
+        dotter.SetNodeShape("val34", godot.SHAPE_BOX)
+}
+#+END_SRC
+
+
+[[https://bitdeli.com/free][https://d2weczhvl823v0.cloudfront.net/paetzke/godot/trend.png]]
