@@ -1,8 +1,5 @@
 * godot
 
-Copyright (c) 2013, Friedrich Paetzke (f.paetzke@gmail.com)
-All rights reserved.
-
 Godot is a graphviz wrapper for Go.
 
 An example:
@@ -33,5 +30,14 @@ func main() {
 }
 #+END_SRC
 
+** CREDITS
 
-[[https://bitdeli.com/free][https://d2weczhvl823v0.cloudfront.net/paetzke/godot/trend.png]]
+Thanks to:
+
+- kisielk (https://github.com/kisielk) for fixing a bug
+
+
+
+Copyright (c) 2013, Friedrich Paetzke (paetzke@fastmail.fm)
+
+All rights reserved.
